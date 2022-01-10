@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Video Live Stream</title>
+      <style>
+          .video{
+              display: flex;
+          }
+      </style>
+  </head>
+  <body>
+    <h1>Video Live</h1>
+    <div class="video">
+        <video poster="{% url 'livecam_feed' %}" style="width: 50%; height: auto " controls="controls" preload="none" onclick="this.play()">
+        </video>
+        <video poster="{% url 'livecam_feed2' %}" style="width: 50%; height: auto " controls="controls" preload="none" onclick="this.play()">
+              Your browser does not support the video tag.
+        </video>
+    </div>
+  </body>
+</html>
